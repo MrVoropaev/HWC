@@ -24,6 +24,8 @@ int number = ReadNumber("Введи число: ");
 
 for (int i = 1; i <= number; i++)
 {
-    Console.Write($"{i*i*i} ");
+    Console.Write(Math.Pow(i, 3) + " ");
+    //Console.Write($"{i*i*i} ");//
 }
+
 
