@@ -3,12 +3,6 @@
 // Формула для расчета приложена в файле FORMULA.md
 
 
-int Сoordinate(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
-
 int x1 = Сoordinate("Введите координату X: ");
 int y1 = Сoordinate("Введите координату Y: ");
 int z1 = Сoordinate("Введите координату Z: ");
@@ -23,8 +17,12 @@ int C = z1 - z2;
 /*Sqrt(double value): возвращает квадратный корень числа value
 например double result = Math.Sqrt(16); -> 4 */
 
-double length = Math.Sqrt(A * A + B * B + C * C);
+int Сoordinate(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+double length = Math.Sqrt(Math.Pow(A, 2)+ Math.Pow(B, 2) + Math.Pow(C, 2));
 Console.WriteLine($"Длинна {length}");
-
-
 
